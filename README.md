@@ -1,3 +1,3 @@
 # Slider-swiper-js
 Создание слайдера на JS.
-[slider] 
+[slider] https://shuckiy73.github.io/Slider-swiper-js/
