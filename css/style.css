@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    flex-grow: 1;
+}
+
+/* ============== 1 вариант SWIPER ============== */
+.swiper {
+    display: flex;
+    /* max-width: 800px; */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    box-sizing: content-box;
+}
+
+.swiper-slide{
+    display: flex;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Кнопки вперед и назад */
+.swiper-button-prev{
+    background-color: #bb8b5f30;
+    left: 20px;
+}
+
+.swiper-button-next{
+    background-color: #bb8b5f30;
+    right: 20px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: #bb8c5f;
+    font-size: 30px;
+}
+
+/* Пагинация (точки) */
+/* .swiper-pagination{} */
+
+.swiper-pagination-bullet{
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    border-radius: 0;
+    border: 2px solid #bb8c5f;
+} 
+
+.swiper-pagination-bullet-active{
+    background-color: #bb8c5f;
+}
